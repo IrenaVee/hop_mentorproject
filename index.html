@@ -2,73 +2,85 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>HOME WXYZ</title>
-    <link rel="stylesheet" href="homepage.css">
+    <title>TEST HOME WXZY</title>
+    <!--UITZOEKEN WAT ONDERSTAANDE INHOUDT-->
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--UITZOEKEN OF DIT DE BESTE MANIER IS OM JQUERY TOE TE VOEGEN-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="homepage.css" />
   </head>
 
   <body>
-  <div class="container clearfix">
+    <!--Onderstaande afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
+    Faux Column Technique, om ervoor te zorgen dat beide elementen gelijke hoogte op de pagina-->
+    <div class="container">
 
-    <main class="main">
-      <div class="logo">
-          <img src="logo_aangepast.svg" alt="HOME"/>
-      </div>
-      <div class="welkomsttekst">
-        <hr align="left", width="20%", size="5px", color="#ffffff">
-        <h1>Magni aestimabat ENIM <br>propter voluptatem</h1>
-        <p>Ut optime, secundum naturam affectum esse possit.
-        Quae similitudo in genere etiam humano apparet.</p>
-        <p><a href="about.html">Meer weten ⟶ </a></p>
-      </div>
-    </main>
+      <main class="main">
+        <div class="logo">
+            <img src="logo_aangepast.svg" alt="HOME"/>
+        </div>
+        <div class="welkomsttekst">
+          <hr>
+          <h1>Magni aestimabat ENIM <br>propter voluptatem</h1>
+          <p>Ut optime, secundum naturam affectum esse possit.
+          Quae similitudo in genere etiam humano apparet.</p>
+          <p><a href="about.html">Meer weten ⟶ </a></p>
+        </div>
+      </main>
 
-    <aside class="sidebar">
-      <div class="search"><img src="search2.svg" alt="ZOEK"/></div>
-      <div class="menu">MENU</div>
+      <aside class="sidebar">
+        <div class="search"><img src="search2.svg" alt="ZOEK"/></div>
+        <div class="menu">MENU<span class="toggle-button">
+          <div class="menu-bar menu-bar-top"></div>
+          <div class="menu-bar menu-bar-middle"></div>
+          <div class="menu-bar menu-bar-bottom"></div>
+        </span></div>
 
-      <input type="checkbox" id="slidemenutoggler">
-      <label for="slidemenutoggler" class="toggle">☰</label>
-
-      <div class="slidemenu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Summae mihi videtur inscitiae</a></li>
-          <li><a href="#">Itaque eos id agere</a></li>
-          <li><a href="#">Bonum patria</a></li>
-          <li><a href="#">Magni</a></li>
-          <li><a href="#">Aestimabat pecuniam</a></li>
-          <li><a href="#">Multoque hoc melius</a></li>
-          <li><a href="#">Primum ducas</a></li>
-          <li><a href="#">Quod est</a></li>
-          <li><a href="#">Omnis enim est</a></li>
-          <li><a href="#">Aristonem</a></li>
-        </ul>
+        <div class="menu-wrap">
+          <div class="menu-sidebar">
+            <ul class="menu-options">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Summae mihi videtur inscitiae</a></li>
+              <li><a href="#">Itaque eos id agere</a></li>
+              <li><a href="#">Bonum patria</a></li>
+              <li><a href="#">Magni</a></li>
+              <li><a href="#">Aestimabat pecuniam</a></li>
+              <li><a href="#">Multoque hoc melius</a></li>
+              <li><a href="#">Primum ducas</a></li>
+              <li><a href="#">Quod est</a></li>
+              <li><a href="#">Omnis enim est</a></li>
+              <li><a href="#">Aristonem</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="intro1">
-        <hr align="left", width="50%", size="5px", color="#ffffff">
+        <hr>
         <h2>Lorem ipsum dolor sit amet consectetur.</h2>
         <p>
           Apparet statim, quae sint officia, quae actiones. Quid ei reliquisti,
           nisi te, quoquo modo loqueretur, intellegere, quid diceret sic enim.
         </p>
-        <p><a href="overzicht.html">Vraag & antwoord ⟶</a></p>
-        </div>
+        <p><a href="overview.html">Vraag & antwoord ⟶</a></p>
+      </div>
 
         <div class="intro2">
-          <hr align="left", width="50%", size="5px", color="#ffffff">
+          <hr>
           <h2>Summae mihi videtur inscitiae. Itaque eos id. </h2>
           <p>
             Nam illud vehementer repugnat, eundem beatum esse et multis malis
             oppressum. Haec igitur Epicuri non probo, inquam. Nam quibus rebus.
           </p>
           <p>
-            <a href="detailpagina.html">Meld een misstand ⟶</a>
+            <a href="detail.html">Meld een misstand ⟶</a>
           </p>
-        </div>
+      </div>
 
     </aside>
   </div>
 
-  </body>
+
+</body>
 </html>
