@@ -5,11 +5,9 @@
     <title>TEST HOME WXZY</title>
     <!--UITZOEKEN WAT ONDERSTAANDE INHOUDT-->
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-    <!--UITZOEKEN OF DIT DE BESTE MANIER IS OM JQUERY TOE TE VOEGEN-->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" media="all" href="homepage.css" />
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="css/homepage.css" />
   </head>
 
   <body>
@@ -18,20 +16,35 @@
     <div class="container">
 
       <main class="main">
-        <div class="logo">
-            <img src="logo_aangepast.svg" alt="HOME"/>
-        </div>
+
+        <a href="index.html">
+          <div class="logo">
+             <p>UNITY</p>
+          </div>
+        </a>
+
         <div class="welkomsttekst">
-          <hr>
-          <h1>Magni aestimabat ENIM <br>propter voluptatem</h1>
-          <p>Ut optime, secundum naturam affectum esse possit.
+          <hr class="hr_main">
+          <h1 class="title_main">Magni aestimabat ENIM <br>propter voluptatem</h1>
+          <p class="text_main">Ut optime, secundum naturam affectum esse possit.
           Quae similitudo in genere etiam humano apparet.</p>
           <p><a href="about.html">Meer weten ⟶ </a></p>
         </div>
       </main>
 
       <aside class="sidebar">
-        <div class="search"><img src="search2.svg" alt="ZOEK"/></div>
+
+        <div class="search">
+         <form class="searchbox">
+        <!--input zoekveld-->
+         <input type="text" placeholder="Ik ben op zoek naar..." name="search" class="searchbox-input" required>
+         <!--Onderstaande is actief wanneer zoekveld gevuld is of op 'enter' wordt geklikt-->
+         <input type="submit" class="searchbox-submit" value="ZOEK">
+         <!--Soort van clone van input submit button, actief/zichtbaar wanneer zoekveld leeg is-->
+         <span class="searchbox-icon"><img src="images/search2.svg" alt="ZOEK"/></span>
+         </form>
+        </div>
+
         <div class="menu">MENU<span class="toggle-button">
           <div class="menu-bar menu-bar-top"></div>
           <div class="menu-bar menu-bar-middle"></div>
@@ -41,13 +54,14 @@
         <div class="menu-wrap">
           <div class="menu-sidebar">
             <ul class="menu-options">
-              <li><a href="#">Home</a></li>
+              <li class="bold_li"><a href="#">HOME</a></li>
               <li><a href="#">Summae mihi videtur inscitiae</a></li>
               <li><a href="#">Itaque eos id agere</a></li>
               <li><a href="#">Bonum patria</a></li>
               <li><a href="#">Magni</a></li>
               <li><a href="#">Aestimabat pecuniam</a></li>
               <li><a href="#">Multoque hoc melius</a></li>
+              <li class="list_division"><a href="#"></></li>
               <li><a href="#">Primum ducas</a></li>
               <li><a href="#">Quod est</a></li>
               <li><a href="#">Omnis enim est</a></li>
@@ -57,9 +71,9 @@
       </div>
 
       <div class="intro1">
-        <hr>
-        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>
+        <hr class="hr_intro1">
+        <h2 class="title_intro1">Lorem ipsum dolor sit amet consectetur.</h2>
+        <p class="text_intro1">
           Apparet statim, quae sint officia, quae actiones. Quid ei reliquisti,
           nisi te, quoquo modo loqueretur, intellegere, quid diceret sic enim.
         </p>
@@ -67,9 +81,9 @@
       </div>
 
         <div class="intro2">
-          <hr>
-          <h2>Summae mihi videtur inscitiae. Itaque eos id. </h2>
-          <p>
+          <hr class="hr_intro2">
+          <h2 class="title_intro2">Summae mihi videtur inscitiae. Itaque eos id. </h2>
+          <p class="text_intro2">
             Nam illud vehementer repugnat, eundem beatum esse et multis malis
             oppressum. Haec igitur Epicuri non probo, inquam. Nam quibus rebus.
           </p>
