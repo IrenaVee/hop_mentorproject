@@ -65,7 +65,7 @@ h2 {
 
 /*Onderstaande afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
 Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte hebben*/
-.container {
+*.container {
   width: 100%;
   height: 100%;
   display: table;
@@ -75,6 +75,8 @@ Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte 
   float: none;
   vertical-align: top;
   height: 100%;
+  display: table-cell; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
+  Faux Column Technique*, wanneer ik dit weghaal, komen de intro div's onder main div te staan*/
 }
 
 .main {
@@ -84,8 +86,6 @@ Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte 
   background-size: contain;
   background-color: LightSlateGrey;
   background-size: cover;
-  display: table-cell; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
-  Faux Column Technique*/
 }
 
 .logo {
@@ -100,12 +100,12 @@ Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte 
 .logo p {
   padding-top:40px;
   text-align: center;
-  font-family: 'BaltoBookMedium', sans-serif;
+  font-family: 'BaltoBookBold', sans-serif;
   color: #FF6347;
   font-size: 25px;
 }
 
-.hr_main   {
+.hr_main  {
   height: 4px;
   width: 50%;
   margin-left: 0;
@@ -139,7 +139,7 @@ font-size: 20px;
   color: #000000;
   cursor: pointer;
   text-shadow: none;
-font-weight: bolder;
+  font-weight: bolder;
 }
 
 .menu {
@@ -151,7 +151,7 @@ font-weight: bolder;
   font-family: 'BaltoBookMedium', sans-serif;
   text-decoration: none;
   text-align: left;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 1.5px;
   color: #000000;
   width: 130px;
@@ -204,7 +204,6 @@ font-weight: bolder;
 }
 
 /*.button-open heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
-
 .button-open .menu-bar-top {
   transform: rotate(45deg) translate(5px, 5px);
   transition: .5s;
@@ -218,6 +217,21 @@ font-weight: bolder;
   transform: rotate(-45deg) translate(5px, -5px);
   transition: .5s;
 }
+
+/*.search {
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  margin-right: 130px;
+  float:right;
+  position: relative;
+  z-index: 1; /*zodat button zichtbaar blijft wanneer menu open is.
+  Z-index werkt alleen in combi met een 'positioned element'!!!*/
+  /*cursor: pointer;
+  overflow: hidden;
+}*/
 
 .search{
  width:100%;
@@ -245,8 +259,9 @@ font-weight: bolder;
  position:absolute;
  top:0;
  right:0;
- border:0;
- outline:0;
+ /*styling nodig om default styleing van form-element aan te passen*/
+ border:0; /*zorgt ervoor dat border weg is*/
+ outline:0; /*haalt blauwe lijn weg rond zoekveld*/
  background:#DCDCDC;
  width:100%;
  height:50px;
@@ -254,19 +269,23 @@ font-weight: bolder;
  padding-left: 20px;
  font-size:20px;
  color:#000000;
- overflow: visible;
+ overflow: visible; /*zorgt ervoor dat volledig veld wordt weergegeven. Evt later nog aanpassen*/
 }
+
 .searchbox-input::-webkit-input-placeholder {
- color: #000000;
+ color: #696969;
 }
+
 .searchbox-input:-moz-placeholder {
- color: #000000;
+ color: #696969;
 }
+
 .searchbox-input::-moz-placeholder {
- color: #000000;
+ color: #696969;
 }
-.searchbox-input:-ms-input-placeholder {
- color: #000000;
+
+.searchbox-input::-ms-input-placeholder {
+ color: #696969;
 }
 
  .searchbox-icon,
@@ -289,13 +308,13 @@ font-weight: bolder;
   background:#000000;
  }
 .searchbox-icon img {
-  padding-top: 10px;
+  padding-top: 25%;
 }
 
- .searchbox{
+ .searchbox {
  position:relative;
  min-width:50px;
- width:0%; /*zorgt ervoor dat search box hidden is wanneer zoek niet actief is*/
+ width:0%; /*zorgt ervoor dat input field hidden is wanneer zoek niet actief is*/
  height:50px;
  float:right;
  overflow:hidden;
@@ -306,7 +325,7 @@ font-weight: bolder;
  transition: width 0.3s;
 }
 
-.searchbox-open{ /*niet in html, komt terug in jQuery via addClass*/
+.searchbox-open{ /*niet in html, komt terug in jQuery via addClass, zorgt ervoor dat input field zichtbaar is*/
  width:100%;
 }
 
@@ -316,8 +335,6 @@ font-weight: bolder;
   background-color: #FFA07A;
   color: #ffffff;
   z-index: 0;
-  display: table-cell; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
-  Faux Column Technique*/
 }
 
 .intro1 {
