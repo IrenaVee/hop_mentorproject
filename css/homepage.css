@@ -457,12 +457,18 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
     float: none;
     width: 100%;
     display: block;
+/*Onderstaande oplossing om background img te resizen gevonden via Stack Overflow
+position center center is 50% horizontaal, 50% verticaal*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .sidebar {
     display: block;
-
-
   }
+
+
 
 }
