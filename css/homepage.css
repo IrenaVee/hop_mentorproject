@@ -452,15 +452,15 @@ li a:hover {
 /*voor smartphones heb ik een max width aangehouden tot 767px.
 Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lumia 830/920/925 en 1020*/
 
-@media (max-width: 767px) {
+@media (max-width: 767px)  {
   .main {
     float: none;
     width: 100%;
     display: block;
 /*Onderstaande oplossing om background img te resizen gevonden via Stack Overflow
-position center center is 50% horizontaal, 50% verticaal*/
+position top center is top 0%, verticaal 50% gelijnd -> image gecentreerd*/
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-attachment: fixed;
     background-size: cover;
   }
