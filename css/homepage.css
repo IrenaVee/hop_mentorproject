@@ -43,7 +43,7 @@ html {
   box-sizing: inherit;
 }
 
-body, html {
+body, html, .main, .sidebar {
   height: 100%;
 }
 
@@ -63,20 +63,11 @@ h2 {
   font-size: 20px;
 }
 
-/*Onderstaande afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
-Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte hebben*/
-*.container {
+#container {
   width: 100%;
   height: 100%;
-  display: table;
-}
-
-.main, .sidebar {
-  float: none;
-  vertical-align: top;
-  height: 100%;
-  display: table-cell; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
-  Faux Column Technique*, wanneer ik dit weghaal, komen de intro div's onder main div te staan*/
+  display:table; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
+  Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte hebben*/
 }
 
 .main {
@@ -86,6 +77,10 @@ Faux Column Technique, om ervoor te zorgen dat <main> en <aside> gelijke hoogte 
   background-size: contain;
   background-color: LightSlateGrey;
   background-size: cover;
+  float: none;
+  vertical-align: top;
+  display: table-cell; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
+  Faux Column Technique*, wanneer ik dit weghaal, komen de intro div's onder main div te staan*/
 }
 
 .logo {
@@ -335,6 +330,11 @@ font-size: 20px;
   background-color: #FFA07A;
   color: #ffffff;
   z-index: 0;
+  float: none;
+  vertical-align: top;
+  display: table-cell; /*afkomstig van http://www.hongkiat.com/blog/css-equal-height/,
+  Faux Column Technique*, wanneer ik dit weghaal, komen de intro div's onder main div te staan*/
+
 }
 
 .intro1 {
@@ -447,4 +447,22 @@ li a {
 
 li a:hover {
   color: #FFF5EE;
+}
+
+/*voor smartphones heb ik een max width aangehouden tot 767px.
+Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lumia 830/920/925 en 1020*/
+
+@media (max-width: 767px) {
+  .main {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  .sidebar {
+    display: block;
+
+
+  }
+
 }
