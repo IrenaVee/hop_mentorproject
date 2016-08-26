@@ -465,6 +465,17 @@ position top center is top 0%, verticaal 50% gelijnd -> image gecentreerd*/
     background-size: cover;
   }
 
+  .logo {
+    height: 75px;
+    position: absolute;
+    background-color: #000000;
+  }
+
+  .logo p {
+    padding-top:20px;
+    font-size: 25px;
+  }
+
   .sidebar {
     display: block;
   }
