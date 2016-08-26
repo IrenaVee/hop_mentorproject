@@ -458,13 +458,17 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
     width: 100%;
     height: 50%;
     display: block;
-    margin-bottom: 10px;
     /*Onderstaande oplossing om background img te resizen gevonden via Stack Overflow
     position center center is 50% horizontaal, 50% verticaal*/
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
     background-size: cover;
+  }
+
+  .welkomsttekst {
+    padding-top: 200px;
+    margin-bottom: 10px;
   }
 
   .logo {
