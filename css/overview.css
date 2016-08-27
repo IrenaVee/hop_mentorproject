@@ -360,14 +360,14 @@ color: #ffffff;
 }
 
 .topic {
-  padding-left: 40px;
+  padding-left: 5%;
   padding-top: 20px;
   font-family: 'BaltoBookBold',sans-serif;
   color: #000000;
 }
 
 .question {
-  padding-left: 40px;
+  padding-left: 5%;
   padding-bottom: 0px;
   margin: 0;
   width: 50%;
@@ -384,8 +384,20 @@ color: #ffffff;
   color: #FF6347;
 }
 
+.question-open a {
+  margin: 0;
+  padding: 0;
+}
+.question p {
+  font-size: 10px;
+}
+
+.question-open {
+  font-family: 'BaltoBookBold', sans-serif;
+  color: #FF6347;
+}
+
 .answer-button {
-  border: 1px solid #000000;
   width: 20px;
   height: 20px;
   right: 20%;
@@ -394,18 +406,24 @@ color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-
 }
 
+/*Onderstaande wordt zichtbaar via jQuery als op answerbutton wordt geklikt*/
 .answer-open {
   width: 20px;
   height: 20px;
-  float: right;
+  right: 20%;
+  position: absolute;
   background-image: url(../images/angle_down.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-right: 5%;
+}
+
+.answer {
+  padding-left: 5%;
+  padding-right: 15%;
+  border: 1px solid black;
 }
 
 footer {
