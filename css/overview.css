@@ -1,4 +1,49 @@
-body, html{
+@font-face {
+  font-family: 'BaltoBook';
+  src: url('../fonts/balto/baltoweb-book.eot');
+  src: url('../fonts/balto/baltoweb-book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/balto/baltoweb-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaltoBookItalic';
+  src: url('../fonts/balto/baltoweb-bookitalic.eot');
+  src: url('../fonts/balto/baltoweb-bookitalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/balto/baltoweb-bookitalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaltoBookMedium';
+  src: url('../fonts/balto/baltoweb-medium.eot');
+  src: url('../fonts/balto/baltoweb-medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/balto/baltoweb-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BaltoBookBold';
+  src: url('../fonts/balto/baltoweb-bold.eot');
+  src: url('../fonts/balto/baltoweb-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/balto/baltoweb-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change
+(Box Model, http://www.paulirish.com/2012/box-sizing-border-box-ftw/)*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html {
   height: 100%;
 }
 
