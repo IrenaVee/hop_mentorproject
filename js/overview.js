@@ -11,6 +11,10 @@ $(document).ready(function() {
 		$menuWrap.toggleClass('menu-show'); //refereert aan .menu-show in CSS
 		$menuButton.toggleClass('menu-open'); //refereert aan .menu-open in CSS
 	});
+
+	var $answerShow = $('#faqs dd')
+	$answerShow.hide();
+
 });
 
 $(document).ready(function(){
@@ -57,4 +61,4 @@ $(document).ready(function(){
         $('.searchbox-icon').css('display','block');
       };
 
-		  };
+		};
