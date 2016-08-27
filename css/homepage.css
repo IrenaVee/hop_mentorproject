@@ -527,7 +527,6 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   .intro1 {
     height: 50%;
     padding: 30px 10px 10px 20px;
-    line-height: 120%;
   }
 
   .hr_intro1 {
@@ -535,45 +534,16 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   }
 
   .intro2 {
-    /*height: 50%;, deze waarde werkt niet*/
-    background-color: #000000;
-    color: #FFF5EE;
-    padding: 100px 50px 20px 30px;
-    line-height: 120%;
+    height: 50%;
+    padding: 30px 10px 10px 20px;
   }
 
   .hr_intro2 {
     height: 4px;
-    width: 25%;
+    width: 20%;
     margin-left: 0;
     color: #FFF5EE;
     background: #FFF5EE;
     font-size: 0;
     border: 0;
   }
-
-  .title_intro2, .text_intro2, .intro2 p a {
-    color: #FFF5EE;
-  }
-
-  .intro2 p a {
-    cursor: pointer;
-  }
-
-  .intro2 p a:hover {
-    color: #FF7F50;
-    cursor: pointer;
-  }
-
-
-
-
-
-  .intro2 {
-    /*height: 50%;, deze waarde werkt niet*/
-    height: 50%;
-    background-color: #000000;
-    color: #FFF5EE;
-    padding: 100px 50px 20px 30px;
-    line-height: 120%;
-}
