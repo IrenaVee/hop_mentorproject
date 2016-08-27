@@ -359,16 +359,17 @@ color: #ffffff;
   padding-bottom: 10px;
 }
 
-#topic {
+.faqs {
   padding-left: 5%;
   padding-top: 20px;
   font-family: 'BaltoBookBold',sans-serif;
   color: #000000;
-
 }
+
 
 #faqs dt, #faqs dd {
   padding: 0 0 0 50px }
+
 #faqs dt {
   font-size:1.5em;
   color: #9d9d9d;
@@ -429,7 +430,7 @@ color: #ffffff;
   color: #FF6347;
 }
 
-.answer-button {
+.answer-icon {
   width: 20px;
   height: 20px;
   right: 20%;
