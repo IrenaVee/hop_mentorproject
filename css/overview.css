@@ -382,11 +382,17 @@ color: #ffffff;
   font-size: 1em;
   margin: 0 0 20px 25px;
 }
+
 #faqs dt {
-  background: url(http://www.designonslaught.com/files/2012/06/expand-icon.png) no-repeat left;
+  background: url(../images/angle_right.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 5%;
 }
 #faqs .expanded {
-  background: url(http://www.designonslaught.com/files/2012/06/expanded-icon.png) no-repeat left;
+  background: url(../images/angle_down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 
