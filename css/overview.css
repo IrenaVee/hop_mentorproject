@@ -359,28 +359,49 @@ color: #ffffff;
   padding-bottom: 10px;
 }
 
-.faqs {
+.topic {
   padding-left: 5%;
   padding-top: 20px;
   font-family: 'BaltoBookBold',sans-serif;
   color: #000000;
 }
 
+/*#faqs {
+  padding-left: 5%;
+  padding-top: 5%;
+  font-family: 'BaltoBookBold',sans-serif;
+  color: #000000;
+  line-height: 150%;
+}*/
 
-#faqs dt, #faqs dd {
-  padding: 0 0 0 50px }
+.question {
+  padding-left: 5%;
+  margin: 0;
+  width: 95%;
+  height: auto;
+}
 
-#faqs dt {
-  font-size:1.5em;
-  color: #9d9d9d;
-  cursor: pointer;
-  height: 37px;
-  line-height: 37px;
-  margin: 0 0 15px 25px}
+.answer-indication {
+  font-size: 10px;
+}
 
-#faqs dd {
-  font-size: 1em;
-  margin: 0 0 20px 25px;
+.answer-indication-active {
+  font-size: 10px;
+}
+.question:hover {
+  text-decoration: underline;
+  color: #FF6347;
+  font-family: 'BaltBookBold',sans-serif;
+}
+
+.question-active {
+  padding-left: 5%;
+  margin: 0;
+  width: 95%;
+  height: auto;
+  text-decoration: none;
+  color: #FF6347;
+  font-family: 'BaltBookBold',sans-serif;
 }
 
 #faqs dt {
@@ -389,81 +410,24 @@ color: #ffffff;
   background-position: right;
   margin-right: 5%;
 }
+
 #faqs .expanded {
   background: url(../images/angle_down.svg);
   background-repeat: no-repeat;
   background-position: right;
-}
-
-
-
-.topic {
-  padding-left: 5%;
-  padding-top: 20px;
-  font-family: 'BaltoBookBold',sans-serif;
-  color: #000000;
-}
-
-
-.question {
-  padding-left: 5%;
-  padding-bottom: 0px;
-  margin: 0;
-  width: 50%;
-  height: auto;
-}
-
-.question a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.question a:hover {
-  text-decoration: underline;
-  color: #FF6347;
-}
-
-.question-open a {
-  margin: 0;
-  padding: 0;
-}
-.question p {
-  font-size: 10px;
-}
-
-.question-open {
-  font-family: 'BaltoBookBold', sans-serif;
-  color: #FF6347;
-}
-
-.answer-icon {
-  width: 20px;
-  height: 20px;
-  right: 20%;
-  position: absolute;
-  background-image: url(../images/angle_right.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-}
-
-/*Onderstaande wordt zichtbaar via jQuery als op answerbutton wordt geklikt*/
-.answer-open {
-  width: 20px;
-  height: 20px;
-  right: 20%;
-  position: absolute;
-  background-image: url(../images/angle_down.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  margin-right: 5%;
 }
 
 .answer {
-  padding-left: 5%;
-  padding-right: 15%;
-  border: 1px solid black;
+  font-family: 'BaltoBook',sans-serif;
+  padding-left: 1%;
+  margin-bottom: 20px;
+  color: #000000;
+  width: 90%;
+  height: auto;
+  cursor: pointer;
 }
+
 
 footer {
   background-color: black;
