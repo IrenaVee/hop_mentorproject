@@ -25,7 +25,8 @@ $(document).ready(function() {
 			//.expanded komt alleen voor in css file
 			$questionActive.toggleClass('question-active');//activeert de css style 'question-active'
   });
-
+			//nog afmaken wijzigen .answer-indication als antwoord actief is
+			var $answerInd = $('.answer-indication')
 
 
 });
