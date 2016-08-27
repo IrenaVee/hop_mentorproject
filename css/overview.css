@@ -359,12 +359,44 @@ color: #ffffff;
   padding-bottom: 10px;
 }
 
+#topic {
+  padding-left: 5%;
+  padding-top: 20px;
+  font-family: 'BaltoBookBold',sans-serif;
+  color: #000000;
+
+}
+
+#faqs dt, #faqs dd {
+  padding: 0 0 0 50px }
+#faqs dt {
+  font-size:1.5em;
+  color: #9d9d9d;
+  cursor: pointer;
+  height: 37px;
+  line-height: 37px;
+  margin: 0 0 15px 25px}
+
+#faqs dd {
+  font-size: 1em;
+  margin: 0 0 20px 25px;
+}
+#faqs dt {
+  background: url(http://www.designonslaught.com/files/2012/06/expand-icon.png) no-repeat left;
+}
+#faqs .expanded {
+  background: url(http://www.designonslaught.com/files/2012/06/expanded-icon.png) no-repeat left;
+}
+
+
+
 .topic {
   padding-left: 5%;
   padding-top: 20px;
   font-family: 'BaltoBookBold',sans-serif;
   color: #000000;
 }
+
 
 .question {
   padding-left: 5%;

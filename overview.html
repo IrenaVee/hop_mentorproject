@@ -81,17 +81,25 @@
       <br>
       <br>
       <div class="question-block">
+      <div class="topic"><h2>CAO</h2></div>
+      <dl id="faqs">
+        <dt>Question 1</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit</dd>
 
-      <dl class="topic_test">
-        <dt class="question_test"><a href="#">
-        <h3>Quae est igitur causa istarum angustiarum?<span class="answer-button"></span></h3></a>
-        <p>(verborgen)</p></dt>
-        <dd class="answer_test">Sed ille, ut dixi, vitiose. Ait enim se, si uratur,
-            Quam hoc suave! dicturum. Ut nemo dubitet, eorum omnia officia quo
-            spectare, quid sequi, quid fugere debeant? Varietates autem iniurasque
-            fortunae facile veteres philosophorum praeceptis instituta vita superabat.</dd>
+        <dt>Question 2</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit</dd>
+
+        <dt>Question 3</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit</dd>
       </dl>
 
+      <script type="text/javascript">
+    $("#faqs dd").hide();
+    $("#faqs dt").click(function () {
+        $(this).next("#faqs dd").slideToggle(500);
+        $(this).toggleClass("expanded");
+    });
+    </script>
 
       <div class="topic"><h2>CAO</h2></div>
 
