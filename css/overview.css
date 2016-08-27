@@ -407,6 +407,11 @@ color: #ffffff;
   margin-left: 40px;
 }
 
+.angle_right {
+  background-image: url(../images/angle_right.svg);
+  width: 20px;
+}
+
 footer {
   background-color: black;
   margin-top: 50px;
