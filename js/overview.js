@@ -12,8 +12,17 @@ $(document).ready(function() {
 		$menuButton.toggleClass('menu-open'); //refereert aan .menu-open in CSS
 	});
 
-	var $answerShow = $('#faqs dd')
-	$answerShow.hide();
+	var $answerShow = $('#faqs dd'), //refereert aan het antwoord
+	 		$questionSelect = $("#faqs dt"); //refereert aan de vraag
+
+			$answerShow.hide(); //dit verbergt de antwoorden bij laden document
+			$questionSelect.on('click', function () { //bij het klikken op de vraag, wordt de volgende functie uitgevoerd
+			$(this).next("#faqs dd").slideToggle(500); //next selector selecteer bij het klikken op de vraag de eerstvolgende element met #faqs dd attributen (=antwoord).
+			//Dit voorkomt dat alle antwoorden worden geopend of een antwoord dat bij een andere vraag hoort.
+			//De 500 is de snelheid waarmee het antwoord naar beneden slide, in milliseconden. Ipv milliseconden kan je ook 'fast'/'slow' gebruiken
+			$(this).toggleClass(".expanded"); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
+			//.expanded komt alleen voor in css file
+    });
 
 });
 
