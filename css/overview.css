@@ -142,7 +142,7 @@ header {
   display:block;
   position:absolute ;
   top:0;
-  font-family:'BaltoBookMedium', sans-serif;;
+  font-family:'BaltoBookMedium', sans-serif;
   font-size:22px;
   right:0;
   padding:0;
@@ -204,13 +204,13 @@ header {
 
 .menu-wrap {
 background-color: #E9967A;
-position: fixed; /*of absolute*/
+position: fixed;
 top: 0;
 right: 0;
 height: 100%;
 width: 30%; /*aanpassen naar 130*/
 margin-right: -30%  ; /*aanpassen naar -130*/
-font-size: 1em; /*aanpassen naar 20px*/
+font-size: 1em;
 font-weight: 700;
 letter-spacing: 1.5px;
 color: #ffffff;
@@ -301,8 +301,6 @@ li a:hover {
   transition: .5s;
 }
 
-
-
 .intro {
   width: 75%;
   height: 250px;
@@ -310,6 +308,7 @@ li a:hover {
   margin: -125px auto 0;
   text-align: center;
   line-height: 150%;
+  padding-top: 50px;
 }
 
 .hr_intro {
@@ -322,14 +321,14 @@ li a:hover {
 }
 
 .intro h1 {
-  color: #008B8B;
+  color: #00000;
 }
 
 .cao {
   width: 250px;
   height: 50px;
-  margin: -40px auto 0;
-  background-color: #FFA07A;
+  margin: -45px auto 0;
+  background-color: #FF6347;
   text-align: center;
 }
 
@@ -345,7 +344,7 @@ color: #ffffff;
 }
 
 .cao p a:hover {
-  color:  #FF6347;
+  color:  #000000;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -377,6 +376,7 @@ color: #ffffff;
 .subject p a {
   text-decoration: none;
   color: #000000;
+  margin: 40px;
 }
 .subject p a:hover {
   text-decoration: underline;
