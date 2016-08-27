@@ -161,6 +161,59 @@ font-size: 20px;
   background-color: #FFF5EE;
 }
 
+.menu-sidebar {
+  padding-top: 100px;
+}
+
+.menu-wrap {
+background-color: #E9967A;
+position: fixed; /*of absolute*/
+top: 0;
+right: 0;
+height: 100%;
+width: 30%; /*aanpassen naar 130*/
+margin-right: -30%  ; /*aanpassen naar -130*/
+font-size: 1em; /*aanpassen naar 20px*/
+font-weight: 700;
+letter-spacing: 1.5px;
+color: #ffffff;
+overflow: hidden;
+transition: .25s;
+/*z-index: 10;*/
+}
+
+.menu-show { /*heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
+	margin-right: 0;
+	box-shadow: 4px 2px 15px 1px #B9ADAD;
+}
+
+li {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.bold_li {
+  font-family: 'BaltoBookMedium', sans-serif;
+}
+
+.list_division {
+  margin-top: 100px;
+}
+
+li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #FFF5EE;
+}
+
+
+
+
 .toggle-button {
   position: absolute;
   width: 30px;
@@ -397,60 +450,19 @@ font-size: 20px;
   cursor: pointer;
 }
 
-.menu-sidebar {
-  padding-top: 100px;
-}
-
-.menu-wrap {
-background-color: #E9967A;
-position: fixed; /*of absolute*/
-top: 0;
-right: 0;
-height: 100%;
-width: 30%; /*aanpassen naar 130*/
-margin-right: -30%  ; /*aanpassen naar -130*/
-font-size: 1em; /*aanpassen naar 20px*/
-font-weight: 700;
-letter-spacing: 1.5px;
-color: #ffffff;
-overflow: hidden;
-transition: .25s;
-/*z-index: 10;*/
-}
-
-.menu-show { /*heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
-	margin-right: 0;
-	box-shadow: 4px 2px 15px 1px #B9ADAD;
-}
-
-li {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  list-style: none;
-  cursor: pointer;
-}
-
-.bold_li {
-  font-family: 'BaltoBookMedium', sans-serif;
-}
-
-.list_division {
-  margin-top: 100px;
-}
-
-li a {
-  color: #000000;
-  text-decoration: none;
-}
-
-li a:hover {
-  color: #FFF5EE;
-}
 
 /*voor smartphones heb ik een max width aangehouden tot 767px.
 Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lumia 830/920/925 en 1020*/
 
 @media (max-width: 767px)  {
+
+  .logo {
+    height: 75px;
+  }
+
+  .logo p {
+    padding-top:20px;
+  }
 
   .main {
     width: 100%;
@@ -470,34 +482,9 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   font-size: 18px;
   }
 
-  .welcome_text p a:hover {
-    color: #000000;
-    cursor: pointer;
-    text-shadow: none;
-    font-weight: bolder;
-  }
-
-
-  .logo {
-    height: 75px;
-    position: absolute;
-  }
-
-  .logo p {
-    padding-top:20px;
-  }
-
-  .sidebar {
-    display: block;
-    height: 50%;
-    width: 100%;
-  }
-
   .menu {
     position:fixed;
     bottom: 0px;
-    z-index: 1;
-    display: block;
     font-size: 22px;
     letter-spacing: 1.5px;
     color: #000000;
@@ -507,58 +494,53 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
     margin-right: 0px;
   }
 
-  .toggle-button {
-    position: absolute;
-    width: 30px;
-    height: 40px;
-    padding: 4px;
-    margin-left: 5px;
-    transition: .25s;
-    z-index: 15;
+  .menu-sidebar {
+    padding-top: 100px;
   }
 
-  .toggle-button:hover {
+  .menu-wrap {
+  width: 75%; /*aanpassen naar 130*/
+  margin-right: -75%; /*aanpassen naar -130*/
+  font-size: 1em; /*aanpassen naar 20px*/
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  overflow: hidden;
+  transition: .25s;
+  /*z-index: 10;*/
+  }
+
+  .menu-show { /*heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
+  	margin-right: 0;
+  	box-shadow: 4px 2px 15px 1px #B9ADAD;
+  }
+
+  li {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    list-style: none;
     cursor: pointer;
   }
 
-  .toggle-button .menu-bar {
-    position: absolute;
-    border-radius: 2px;
-    width: 80%;
-    transition: .5s;
+  .bold_li {
+    font-family: 'BaltoBookMedium', sans-serif;
   }
 
-  .toggle-button .menu-bar-top {
-    border: 3px solid #000000;
-    border-bottom: none;
-    top: 1px;
-  }
-  .toggle-button .menu-bar-middle {
-    height: 3px;
-    background-color: #000000;
-    margin-top: 3px;
-    top: 5px;
-  }
-  .toggle-button .menu-bar-bottom {
-    border: 3px solid #000000;
-    border-top: none;
-    top: 15px;
+  .list_division {
+    margin-top: 100px;
   }
 
-  /*.button-open heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
-  .button-open .menu-bar-top {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: .5s;
+  li a {
+    color: #000000;
+    text-decoration: none;
   }
-  .button-open .menu-bar-middle {
-    transform: translate(230px);
-    transition: .1s ease-in;
-    opacity: 0;
+
+  li a:hover {
+    color: #FFF5EE;
   }
-  .button-open .menu-bar-bottom {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: .5s;
-  }
+
+
+
 
   .intro1 {
     /*height: 50%;, deze waarde werkt niet*/
@@ -577,3 +559,15 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
     padding: 100px 50px 20px 30px;
     line-height: 120%;
 }
+
+
+
+
+
+
+
+  .sidebar {
+    display: block;
+    height: 50%;
+    width: 100%;
+  }
