@@ -1,0 +1,274 @@
+body, html{
+  height: 100%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+   overflow-y: auto;
+   font-family: 'Balto', sans-serif;
+   background-color: #D3D3D3;
+}
+
+header {
+  background-image: url(../images/moederdochter1280x426.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: LightSlateGrey;
+  background-size: cover;
+  height: 426px;
+  width: 100%;
+}
+
+.logo {
+  z-index: 1;
+  width: 93px;
+  height: 100px;
+  margin-left: 50px;
+  position: absolute;
+}
+
+.search {
+  width: 45px;
+  height: 45px;
+  border-style: solid;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  margin-right: 166px;
+  float:right;
+  z-index: 1;
+}
+
+.search img {
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.menu {
+  position: absolute;
+  top: 0px;
+  right: 0px; /*right plaats label rechts, left plaats label links*/
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+  font-family: 'Balto' sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  margin-right: 60px;
+  padding-top: 10px;
+  text-align: center;
+  border-style: solid;
+  border-color: #2F4F4F;
+  background-color: #2F4F4F;
+}
+
+.toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px; /*right plaats label rechts, left plaats label links*/
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+  font-family: 'BaltoBookMedium' sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  height: 40px;
+  width: 54px;
+  text-align: center;
+  padding-top: 5px;
+  border-style: solid;
+  border-color: #2F4F4F;
+  background-color: #2F4F4F;
+  transform: translate3d(0, 0, 0);
+  transition: transform .4s;
+}
+
+.slidemenu {
+  transform: translate3d(383px, 0, 0); /*deze waarde zorgt ervoor dat menu 'verdwijnt' als label niet aangevinkt is*/
+  position: absolute;
+  right: 0; /*right plaats label rechts, left plaats label links*/
+  width:  383px;
+  height: 100%;
+  padding: 0px;
+  background-color: #20B2AA;
+  transition: all .4s;
+}
+
+li {
+  margin-bottom: 16px;
+  list-style: none;
+  cursor: pointer;
+}
+
+li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #FF6347;
+  cursor: pointer;
+}
+
+#slidemenutoggler{
+  display: none; /*zodat vinkje niet zichtbaar is*/
+}
+
+input[type=checkbox]:checked ~ label {
+   transform: translate3d(0, 0, 0);
+}
+
+input[type=checkbox]:checked ~ .slidemenu {
+   transform: translate3d(0, 0, 0);
+}
+input[type=checkbox]:checked ~ .slidemenu li {
+   width: 100%;
+}
+
+.intro {
+  width: 75%;
+  height: 250px;
+  background-color: #F5F5F5;
+  margin: -125px auto 0;
+  text-align: center;
+  line-height: 150%;
+}
+
+.hr_intro {
+  height: 5px;
+  color: #FF6347;
+  background: #FF6347;
+  font-size: 0;
+  border: 0;
+  width: 120px;
+}
+
+.intro h1 {
+  color: #008B8B;
+}
+
+.cao {
+  width: 250px;
+  height: 50px;
+  margin: -40px auto 0;
+  background-color: #FFA07A;
+  text-align: center;
+}
+
+.cao p {
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px #000000;
+  padding: 10px;
+}
+
+.cao p a {
+text-decoration: none;
+color: #ffffff;
+}
+
+.cao p a:hover {
+  color:  #FF6347;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.subject {
+  width: 75%;  /*geen height gebruik zodat div zich aanpast aan content*/
+  background-color: #F5F5F5;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 150%;
+  padding-bottom: 10px;
+}
+
+.subject span {
+  float:right;
+  padding-right: 75px;
+}
+
+.subject h1,h2,p {
+  padding-left: 40px;
+}
+
+.subject h1 {
+  padding-top: 40px;
+  color: #000000;
+  font-size: 1.5em;
+}
+
+.subject p a {
+  text-decoration: none;
+  color: #000000;
+}
+.subject p a:hover {
+  text-decoration: underline;
+  color: #FF6347;
+  cursor: pointer;
+}
+
+.subject h2{
+  font-size: 1em; /*font-size em gebruikt na gebrukik inspect element om sixe H1 te bekijken*/
+}
+.subject h2 a {
+  text-decoration: none;
+  color: #FF6347;
+}
+.subject h2 a:hover {
+  text-decoration: underline;
+  color: #20B2AA;
+  cursor: pointer;
+}
+
+.subject hr {
+  height: 1px;
+  color: #D3D3D3;
+  background: #D3D3D3;
+  font-size: 0;
+  border: 0;
+  width: 90%;
+  margin-left: 40px;
+}
+
+footer {
+  background-color: black;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+table {
+  width: 70%;
+  background-color: #000000;
+  color:#F5F5F5;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.showborder {
+  border-right: solid 1px #ffffff;
+}
+
+td {
+    padding-left: 30px;
+    padding-right: 0px;
+}
+
+td a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+td a:hover {
+  text-decoration: underline;
+  color: #FF6347;
+  cursor: pointer;
+}
+
+.secondrow {
+  font-weight: bolder;
+}
