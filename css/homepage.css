@@ -485,13 +485,6 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   .menu {
     position:fixed;
     bottom: 0px;
-    font-size: 22px;
-    letter-spacing: 1.5px;
-    color: #000000;
-    width: 130px;
-    height: 50px;
-    padding: 15px;
-    margin-right: 0px;
   }
 
   .menu-sidebar {
@@ -501,13 +494,6 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   .menu-wrap {
   width: 75%; /*aanpassen naar 130*/
   margin-right: -75%; /*aanpassen naar -130*/
-  font-size: 1em; /*aanpassen naar 20px*/
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #ffffff;
-  overflow: hidden;
-  transition: .25s;
-  /*z-index: 10;*/
   }
 
   .menu-show { /*heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
@@ -522,22 +508,100 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
     cursor: pointer;
   }
 
-  .bold_li {
-    font-family: 'BaltoBookMedium', sans-serif;
+  .search{
+   bottom: 0;
+   position: fixed;
+   right: 130px;
+   margin: 0px;
+   z-index:25; /*zodat button zichtbaar blijft wanneer menu open is.
+   Z-index werkt alleen in combi met een 'positioned element'!!!*/
+   cursor: pointer;
   }
 
-  .list_division {
-    margin-top: 100px;
+  .searchbox{
+   position:relative;
+   height:50px;
+   width:100%;
+   float:right;
   }
 
-  li a {
-    color: #000000;
-    text-decoration: none;
+  .searchbox-submit, .searchbox-icon {
+    float:right;
+  }
+  .searchbox-input{
+   position:absolute;
+   top:0;
+   right:0;
+   /*styling nodig om default styleing van form-element aan te passen*/
+   border:0; /*zorgt ervoor dat border weg is*/
+   outline:0; /*haalt blauwe lijn weg rond zoekveld*/
+   background:#DCDCDC;
+   width:100%;
+   height:50px;
+   margin:0;
+   padding-left: 20px;
+   font-size:20px;
+   color:#000000;
+   overflow: visible; /*zorgt ervoor dat volledig veld wordt weergegeven. Evt later nog aanpassen*/
   }
 
-  li a:hover {
-    color: #FFF5EE;
+  .searchbox-input::-webkit-input-placeholder {
+   color: #696969;
   }
+
+  .searchbox-input:-moz-placeholder {
+   color: #696969;
+  }
+
+  .searchbox-input::-moz-placeholder {
+   color: #696969;
+  }
+
+  .searchbox-input::-ms-input-placeholder {
+   color: #696969;
+  }
+
+   .searchbox-icon,
+   .searchbox-submit{
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute ;
+    top:0;
+    font-family:'BaltoBookMedium', sans-serif;;
+    font-size:22px;
+    right:0;
+    padding:0;
+    margin:0;
+    border:0;
+    outline:0;
+    line-height:50px;
+    text-align:center;
+    cursor:pointer;
+    background:#000000;
+   }
+  .searchbox-icon img {
+    padding-top: 25%;
+  }
+
+   .searchbox {
+   position:relative;
+   min-width:50px;
+   width:0%; /*zorgt ervoor dat input field hidden is wanneer zoek niet actief is*/
+   height:50px;
+   float:right;
+   overflow:hidden;
+   -webkit-transition: width 0.3s;
+   -moz-transition: width 0.3s;
+   -ms-transition: width 0.3s;
+   -o-transition: width 0.3s;
+   transition: width 0.3s;
+  }
+
+  .searchbox-open{ /*niet in html, komt terug in jQuery via addClass, zorgt ervoor dat input field zichtbaar is*/
+   width:100%;
+  }
+
 
 
 
