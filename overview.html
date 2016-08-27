@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>OVERZICHT VRAGEN</title>
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="js/overview.js"></script>
-  <link rel="stylesheet" type="text/css" media="all" href="css/overview.css" />
-  <!--Onderstaande toegevoegd om RWD goed te laten werken.
-    Gekozen voor content "width=device-width" voor de flexibiliteit, past zich aan betreffende device
-    initial-scale=1.0 zorgt ervoor dat layout op een schaal van 1:1 op wordt gegeven, zonder zoom. Zo krijg je de layout die je voor ogen hebt
-    Bron: http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>OVERZICHT VRAGEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/overview.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="css/overview.css" />
+    <!--Onderstaande toegevoegd om RWD goed te laten werken.
+      Gekozen voor content "width=device-width" voor de flexibiliteit, past zich aan betreffende device
+      initial-scale=1.0 zorgt ervoor dat layout op een schaal van 1:1 op wordt gegeven, zonder zoom. Zo krijg je de layout die je voor ogen hebt
+      Bron: http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
   <body>
     <div id="container_overview">
@@ -26,8 +26,20 @@
 
       <header class="imgoverview">
 
-          <div class="search"><img src="images/search2.svg" alt="ZOEK"/></div>
-          <div class="menu">MENU</div>
+        <!--SEARCH-->
+        <div class="search">
+         <form class="searchbox">
+        <!--input zoekveld-->
+         <input type="text" placeholder="Ik ben op zoek naar..." name="search" class="searchbox-input" required>
+         <!--Onderstaande is actief wanneer zoekveld gevuld is of op 'enter' wordt geklikt-->
+         <input type="submit" class="searchbox-submit" value="ZOEK">
+         <!--Soort van clone van input submit button, actief/zichtbaar wanneer zoekveld leeg is-->
+         <span class="searchbox-icon"><img src="images/search2.svg" alt="ZOEK"/></span>
+         </form>
+        </div>
+
+
+        <div class="menu">MENU</div>
 
           <input type="checkbox" id="slidemenutoggler">
           <label for="slidemenutoggler" class="toggle">☰</label>
