@@ -368,7 +368,10 @@ color: #ffffff;
 
 .question {
   padding-left: 40px;
+  padding-bottom: 0px;
   margin: 0;
+  width: 50%;
+  height: auto;
 }
 
 .question a {
@@ -385,12 +388,13 @@ color: #ffffff;
   border: 1px solid #000000;
   width: 20px;
   height: 20px;
-  float: right;
+  right: 20%;
+  position: absolute;
   background-image: url(../images/angle_right.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-right: 5%;
+
 }
 
 .answer-open {
