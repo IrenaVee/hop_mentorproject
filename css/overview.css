@@ -52,7 +52,7 @@ body {
    padding: 0;
    overflow-x: hidden;
    overflow-y: auto;
-   font-family: 'Balto', sans-serif;
+   font-family: 'BaltoBook', sans-serif;
    background-color: #D3D3D3;
 }
 
@@ -322,6 +322,7 @@ li a:hover {
 
 .intro h1 {
   color: #00000;
+  font-family: 'BaltoBookBold', sans-serif;
 }
 
 .cao {
@@ -349,7 +350,7 @@ color: #ffffff;
   cursor: pointer;
 }
 
-.subject {
+.question-block {
   width: 75%;  /*geen height gebruik zodat div zich aanpast aan content*/
   background-color: #F5F5F5;
   margin: 0 auto;
@@ -358,58 +359,49 @@ color: #ffffff;
   padding-bottom: 10px;
 }
 
-.subject span {
-  float:right;
-  padding-right: 75px;
-}
-
-.subject h1,h2 {
+.topic {
   padding-left: 40px;
-}
-
-.subject h1 {
-  padding-top: 40px;
+  padding-top: 20px;
+  font-family: 'BaltoBookBold',sans-serif;
   color: #000000;
-  font-size: 1.5em;
 }
 
-.subject p a {
+.question {
+  padding-left: 40px;
+  margin: 0;
+}
+
+.question a {
   text-decoration: none;
   color: #000000;
-  margin: 40px;
 }
-.subject p a:hover {
+
+.question a:hover {
   text-decoration: underline;
   color: #FF6347;
-  cursor: pointer;
 }
 
-.subject h2{
-  font-size: 1em; /*font-size em gebruikt na gebrukik inspect element om sixe H1 te bekijken*/
-}
-.subject h2 a {
-  text-decoration: none;
-  color: #FF6347;
-}
-.subject h2 a:hover {
-  text-decoration: underline;
-  color: #20B2AA;
-  cursor: pointer;
-}
-
-.subject hr {
-  height: 1px;
-  color: #D3D3D3;
-  background: #D3D3D3;
-  font-size: 0;
-  border: 0;
-  width: 90%;
-  margin-left: 40px;
-}
-
-.angle_right {
-  background-image: url(../images/angle_right.svg);
+.answer-button {
+  border: 1px solid #000000;
   width: 20px;
+  height: 20px;
+  float: right;
+  background-image: url(../images/angle_right.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 5%;
+}
+
+.answer-open {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-image: url(../images/angle_down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 5%;
 }
 
 footer {
