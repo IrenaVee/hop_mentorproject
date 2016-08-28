@@ -387,7 +387,9 @@ color: #ffffff;
 
 .answer-indication-active {
   font-size: 10px;
+  color: #000000;
 }
+
 .question:hover {
   text-decoration: underline;
   color: #FF6347;
@@ -466,3 +468,14 @@ td a:hover {
 .secondrow {
   font-weight: bolder;
 }
+
+/*smartphones max 767px*/
+
+@media (max-width: 767px) {
+  .logo {
+    height: 75px;
+  }
+
+  .logo p {
+    padding-top:20px;
+  }
