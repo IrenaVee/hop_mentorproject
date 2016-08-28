@@ -15,7 +15,8 @@ $(document).ready(function() {
 	var $answerShow = $('#faqs dd'), //refereert aan het antwoord
 	 		$questionSelect = $('.question'); //refereert aan de vraag
 			$questionActive = $('.question');//voor aanpassen styling wanneer vraag actief is (=	betreffende antwoord zichtbaar is)
-			$questionInd = $('.answer-indication');
+			$answerInd = $('.answer-indication');
+			$questionInd = $('.answer-indication');// voor aanpassen styling van .answer-indication
 
 			$answerShow.hide(); //dit verbergt de antwoorden bij laden document
 			$questionSelect.on('click', function () { //bij het klikken op de vraag, wordt de volgende functie uitgevoerd
@@ -25,11 +26,16 @@ $(document).ready(function() {
 			$answerShow.toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
 			//.expanded komt alleen voor in css file
 			$questionActive.toggleClass('question-active');//activeert de css style 'question-active'
-			$questionInd.toggleClass('answer-indication-active');
-
-
+			$answerInd.addClass('answer-indication-active').replaceWith('zie antwoord hieronder');//zorgt ervoor dat .answer-indication-active wordt geactiveerd waardoor answer-indication zwart van kleur is
 
   });
+
+//	var $answerInd = $('.answer-indication-active');
+//	$questionSelect.on('click', function () { //bij het klikken op de vraag, wordt de volgende functie uitgevoerd
+//			$(this).replaceWith('zie antwoord hieronder')
+
+
+
 });
 
 $(document).ready(function(){
