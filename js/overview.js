@@ -15,6 +15,7 @@ $(document).ready(function() {
 	var $answerShow = $('#faqs dd'), //refereert aan het antwoord
 	 		$questionSelect = $("#faqs dt"); //refereert aan de vraag
 			$questionActive = $('.question');//voor aanpassen styling wanneer vraag actief is (=	betreffende antwoord zichtbaar is)
+			$questionInd = $('.answer-indication');
 
 			$answerShow.hide(); //dit verbergt de antwoorden bij laden document
 			$questionSelect.on('click', function () { //bij het klikken op de vraag, wordt de volgende functie uitgevoerd
@@ -24,10 +25,7 @@ $(document).ready(function() {
 			$(this).toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
 			//.expanded komt alleen voor in css file
 			$questionActive.toggleClass('question-active');//activeert de css style 'question-active'
-  });
-			//nog afmaken wijzigen .answer-indication als antwoord actief is
-			var $answerInd = $('.answer-indication')
-
+			$questionInd.toggleClass('answer-indication-active');
 
 });
 
