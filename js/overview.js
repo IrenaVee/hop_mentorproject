@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	var $answerShow = $('#faqs dd'), //refereert aan het antwoord
-	 		$questionSelect = $("#faqs dt"); //refereert aan de vraag
+	 		$questionSelect = $('.question'); //refereert aan de vraag
 			$questionActive = $('.question');//voor aanpassen styling wanneer vraag actief is (=	betreffende antwoord zichtbaar is)
 			$questionInd = $('.answer-indication');
 
@@ -22,11 +22,14 @@ $(document).ready(function() {
 			$(this).next("#faqs dd").slideToggle(500); //next selector selecteer bij het klikken op de vraag de eerstvolgende element met #faqs dd attributen (=antwoord).
 			//Dit voorkomt dat alle antwoorden worden geopend of een antwoord dat bij een andere vraag hoort.
 			//De 500 is de snelheid waarmee het antwoord naar beneden slide, in milliseconden. Ipv milliseconden kan je ook 'fast'/'slow' gebruiken
-			$(this).toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
+			$answerShow.toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
 			//.expanded komt alleen voor in css file
 			$questionActive.toggleClass('question-active');//activeert de css style 'question-active'
 			$questionInd.toggleClass('answer-indication-active');
 
+
+
+  });
 });
 
 $(document).ready(function(){
