@@ -518,7 +518,11 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
    z-index:25; /*zodat button zichtbaar blijft wanneer menu open is.
    Z-index werkt alleen in combi met een 'positioned element'!!!*/
    right: 50px;
+   border-right: solid 1px #FF4500;
+  }
 
+  .searchbox-icon {
+    background-color: #FF6347;
   }
 
   .sidebar {
