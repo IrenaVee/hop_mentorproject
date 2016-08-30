@@ -485,6 +485,7 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   .menu {
     position:fixed;
     bottom: 0px;
+    width: 50px;
   }
 
   .menu-sidebar {
@@ -501,11 +502,12 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
   	box-shadow: 4px 2px 15px 1px #B9ADAD;
   }
 
-  li {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    list-style: none;
-    cursor: pointer;
+  .menu-solo {
+    display: none;
+  }
+
+  .toggle-button {
+  margin-left: -5px;
   }
 
   .search{
@@ -515,7 +517,8 @@ Hier vallen ook onder iPhone 6 (750px), Samsung Galaxy S2/S3 (720), Microsoft Lu
    margin: 0px;
    z-index:25; /*zodat button zichtbaar blijft wanneer menu open is.
    Z-index werkt alleen in combi met een 'positioned element'!!!*/
-   cursor: pointer;
+   right: 50px;
+
   }
 
   .sidebar {
