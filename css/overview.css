@@ -209,8 +209,8 @@ position: fixed;
 top: 0;
 right: 0;
 height: 100%;
-width: 30%; /*aanpassen naar 130*/
-margin-right: -30%  ; /*aanpassen naar -130*/
+width: 30%;
+margin-right: -30%  ;
 font-size: 1em;
 font-weight: 700;
 letter-spacing: 1.5px;
@@ -479,4 +479,19 @@ td a:hover {
 
   .logo p {
     padding-top:20px;
+  }
+
+  .menu {
+    position:fixed;
+    bottom: 0px;
+  }
+
+  .menu-wrap {
+  width: 75%;
+  margin-right: -75%;
+  }
+
+  .menu-show { /*heeft betrekking op styling wanneer toggleClass geactiveerd is in jQuery*/
+  	margin-right: 0;
+  	box-shadow: 4px 2px 15px 1px #B9ADAD;
   }
