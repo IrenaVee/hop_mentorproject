@@ -39,7 +39,7 @@ $(document).ready(function() {
 			//De 500 is de snelheid waarmee het antwoord naar beneden slide, in milliseconden. Ipv milliseconden kan je ook 'fast'/'slow' gebruiken
 			$answerShow.toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
 			//.expanded komt alleen voor in css file
-			$questionActive.toggleClass('question-active');//activeert de css style 'question-active'
+			$(this).toggleClass('question-active');//activeert de css style 'question-active'
 			$answerInd.addClass	('answer-indication-active').replaceWith('zie antwoord hieronder');//zorgt ervoor dat .answer-indication-active wordt geactiveerd waardoor answer-indication zwart van kleur is
 
   });
