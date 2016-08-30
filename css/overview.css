@@ -404,7 +404,7 @@ color: #ffffff;
   height: auto;
   text-decoration: none;
   color: #FF6347;
-  font-family: 'BaltBookBold',sans-serif;
+  font-family: 'BaltoBookBold',sans-serif;
 }
 
 #faqs dt {
@@ -414,7 +414,7 @@ color: #ffffff;
   margin-right: 5%;
 }
 
-#faqs .expanded {
+.expanded {
   background: url(../images/angle_down.svg);
   background-repeat: no-repeat;
   background-position: right;

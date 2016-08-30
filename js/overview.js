@@ -37,7 +37,8 @@ $(document).ready(function() {
 			$(this).next("#faqs dd").slideToggle(500); //next selector selecteer bij het klikken op de vraag de eerstvolgende element met #faqs dd attributen (=antwoord).
 			//Dit voorkomt dat alle antwoorden worden geopend of een antwoord dat bij een andere vraag hoort.
 			//De 500 is de snelheid waarmee het antwoord naar beneden slide, in milliseconden. Ipv milliseconden kan je ook 'fast'/'slow' gebruiken
-			$answerShow.toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
+			//.expanded werkt niet. De background wijzigt niet.
+			$(this).replaceWith('expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expanded'
 			//.expanded komt alleen voor in css file
 			$(this).toggleClass('question-active');//activeert de css style 'question-active'
 			//hoe kan ik next hierin verwerken zodat niet bij alle vragen de .answer-indication wordt vervangen?
