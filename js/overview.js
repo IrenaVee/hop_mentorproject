@@ -1,11 +1,17 @@
 $(document).ready(function() {
 
-			function resizeMenu() {
-				if ($(window).width()<767) {
-						('.menu-solo').hide();
-					};
-				};
+//	function resizeMenu() {
+//		if ($(window).width()<767) {
+//				('.menu-solo').hide();
+//					};
+//				};
 
+
+//	var $menuSmall = $('.menu-solo');
+//			if ($(window).width<676) {
+//				$menuSmall.hide();
+
+//			}
 
 
 	var $toggleButton = $('.toggle-button'),
