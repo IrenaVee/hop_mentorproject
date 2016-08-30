@@ -58,6 +58,7 @@ body {
 
 header {
   background-image: url(../images/moederdochter1280x426.jpeg);
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: LightSlateGrey;
