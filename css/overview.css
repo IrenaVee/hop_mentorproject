@@ -505,3 +505,7 @@ td a:hover {
   .searchbox-icon {
     background-color: #FF6347;
   }
+
+  .menu-solo {
+    display: none;
+  }
