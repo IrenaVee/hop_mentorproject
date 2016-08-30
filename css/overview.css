@@ -484,6 +484,7 @@ td a:hover {
   .menu {
     position:fixed;
     bottom: 0px;
+    width: 50px;
   }
 
   .menu-wrap {
@@ -499,7 +500,8 @@ td a:hover {
   .search{
    bottom: 0;
    position: fixed;
-   border-right: solid 1px #000000;
+   border-right: solid 1px #FF4500;
+   right: 50px;
   }
 
   .searchbox-icon {
@@ -508,4 +510,8 @@ td a:hover {
 
   .menu-solo {
     display: none;
+  }
+
+  .toggle-button {
+  margin-left: -5px;
   }
