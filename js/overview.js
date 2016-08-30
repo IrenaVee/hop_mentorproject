@@ -40,6 +40,7 @@ $(document).ready(function() {
 			$answerShow.toggleClass('.expanded'); //nadat juist antwoord geselecteerd wordt het antwoord zichtbaar doordat de css #faqs .expanded  wordt aangesproken via '.expended'
 			//.expanded komt alleen voor in css file
 			$(this).toggleClass('question-active');//activeert de css style 'question-active'
+			//hoe kan ik next hierin verwerken zodat niet bij alle vragen de .answer-indication wordt vervangen?
 			$answerInd.addClass	('answer-indication-active').replaceWith('zie antwoord hieronder');//zorgt ervoor dat .answer-indication-active wordt geactiveerd waardoor answer-indication zwart van kleur is
 
   });
