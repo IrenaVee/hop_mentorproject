@@ -515,3 +515,27 @@ td a:hover {
   .toggle-button {
   margin-left: -5px;
   }
+
+  .intro {
+    margin: -125px auto 0;
+    padding-top: 50px;
+  }
+
+  .hr_intro {
+    height: 5px;
+    color: #FF6347;
+    background: #FF6347;
+    font-size: 0;
+    border: 0;
+    width: 120px;
+  }
+
+  .intro h1 {
+    color: #00000;
+    font-family: 'BaltoBookBold', sans-serif;
+    font-size: 25px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
