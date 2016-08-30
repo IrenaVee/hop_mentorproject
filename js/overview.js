@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+			function resizeMenu() {
+				if ($(window).width()<767) {
+						('.menu-solo').hide();
+					};
+				};
+
+
+
 	var $toggleButton = $('.toggle-button'),
     	$menuWrap = $('.menu-wrap');
 			$menuButton = $('.menu')

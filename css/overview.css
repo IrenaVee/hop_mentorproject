@@ -495,3 +495,13 @@ td a:hover {
   	margin-right: 0;
   	box-shadow: 4px 2px 15px 1px #B9ADAD;
   }
+
+  .search{
+   bottom: 0;
+   position: fixed;
+   border-right: solid 1px #000000;
+  }
+
+  .searchbox-icon {
+    background-color: #FF6347;
+  }
